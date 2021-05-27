@@ -1,15 +1,13 @@
 
-
-import Home from './pages/Home'
+import ContactUs from './pages/home/ContactUs'
 import './style.scss'
 
 function App() {
   return (
     <div className="App">
-    <Home />
-
+  <ContactUs/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

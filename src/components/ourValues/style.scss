@@ -1,0 +1,46 @@
+@import '../../mixins.scss';
+
+.ourValues {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 16px;
+  margin-right: 16px;
+
+  h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 54px;
+  }
+
+  &__items-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 54px;
+
+    &__values-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      border: 1px solid red;
+
+      &--item {
+        margin-right: 20px;
+      }
+    }
+    &__values-lastRow {
+      border: 1px solid red;
+      margin-left: 90px;
+      margin-right: 90px;
+      margin-top: -30px;
+    }
+  }
+
+  button {
+    @include button(auto, 36px);
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+}

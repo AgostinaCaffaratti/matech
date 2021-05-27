@@ -1,0 +1,39 @@
+.menu {
+  width: 300px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+
+  &__logo {
+    margin: 15px auto 38px auto;
+    align-items: center;
+  }
+  &__section {
+    border-top: 1px solid green;
+    align-items: center;
+
+    &__services {
+      margin-left: 40px;
+
+      p {
+        margin-bottom: 16px;
+      }
+    }
+
+    p {
+      margin-left: 70px;
+      margin-bottom: 16px;
+      margin-top: 7px;
+    }
+
+    &__icons {
+      margin-left: 70px;
+      margin-bottom: 16px;
+      margin-top: 7px;
+
+      &--in {
+        margin-right: 20px;
+      }
+    }
+  }
+}

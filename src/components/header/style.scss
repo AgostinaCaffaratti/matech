@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+  border: solid 1px red;
+  align-items: center;
+
+  &__hamburger {
+    color: #ffffff;
+    height: 42px;
+    width: 42px;
+    border: 1px solid red;
+  }
+}

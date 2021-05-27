@@ -1,0 +1,18 @@
+@import './variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.App {
+  background: $background;
+  height: auto;
+  font-family: $font;
+  color: $primaryColorFont;
+  padding-bottom: 100px;
+}

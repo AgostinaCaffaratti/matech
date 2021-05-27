@@ -1,9 +1,9 @@
 @import '../../mixins.scss';
 @import '../../style.scss';
 .hero {
-  border: 1px solid red;
   justify-content: center;
   margin: 0 24px 0 24px;
+
   &__title {
     text-align: center;
     font-weight: 700;
@@ -15,7 +15,6 @@
     margin: 20px auto 20px auto;
     font-size: 24px;
     font-weight: 400;
-    border: 1px solid red;
   }
   &__button {
     @include button(100%, 36px);

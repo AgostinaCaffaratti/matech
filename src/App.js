@@ -1,5 +1,4 @@
 
-
 import Home from './pages/Home'
 import './style.scss'
 
@@ -8,7 +7,7 @@ function App() {
     <div className="App">
     <Home />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

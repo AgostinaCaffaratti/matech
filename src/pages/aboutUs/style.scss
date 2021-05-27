@@ -1,0 +1,19 @@
+.aboutUs {
+  margin-bottom: 54px;
+  &__card {
+    border: 1px solid red;
+    margin: 34px 48px;
+
+    h2 {
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    &--desc {
+      margin-bottom: 20px;
+    }
+    &--val {
+      margin-top: 16px;
+    }
+  }
+}

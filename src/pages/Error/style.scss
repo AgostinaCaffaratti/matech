@@ -1,8 +1,9 @@
 @import '../../mixins.scss';
-
+.headerError {
+  padding: 0px 16px;
+}
 .heroError {
-  border: 1px solid red;
-  margin: 54px 23px 54px 23px;
+  padding: 0 23px 54px 23px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,5 +25,9 @@
 
   button {
     @include button(100%, 36px);
+    a {
+      text-decoration: none;
+      color: black;
+    }
   }
 }

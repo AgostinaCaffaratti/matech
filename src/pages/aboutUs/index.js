@@ -1,15 +1,11 @@
 import React from 'react'
-import Header from '../../components/header'
-import Hero from '../../components/hero'
-import Footer from '../../components/Footer'
 import data from '../../data/aboutUs.json'
 import './style.scss'
+import Layout from '../../components/Layout'
 
 const AboutUs = () => {
   return (
-    <div>
-      <Header />
-      <Hero />
+    <Layout>
       <div className='aboutUs'>
  {data.map((e) => {
         return (
@@ -30,9 +26,10 @@ const AboutUs = () => {
         )
       })}
       </div>
+    </Layout>
+      
      
-      <Footer />
-    </div>
+     
   )
 }
 

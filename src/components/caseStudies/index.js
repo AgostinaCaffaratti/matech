@@ -15,7 +15,9 @@ const CaseStudies = () => {
               <p className='subtitle'>{c.subtitle}</p>
               <p>{c.description}</p>
             </div>
+           <a href='https://medium.com/@matechstudios' target='blank'>
               <button>READ CASE STUDY</button>
+           </a>
             </Fragment>
           )
         })}

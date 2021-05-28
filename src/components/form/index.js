@@ -8,22 +8,24 @@ const Form = () => {
 
      <div className='form__sec'>
       <label>Full name*</label>
-      <input type='Text' />      
+      <input type='Text' placeholder='Write your full' />      
     </div>
     
     <div className='form__sec'>
       <label>Email*</label>
-      <input type='Email' />      
+      <input type='Email' placeholder='example@yourcom' />      
     </div>   
 
     <div className='form__sec'>
       <label>Name of your company*</label>
-      <input type='Text' />      
+      <input type='Text' placeholder='Your company' />      
     </div>   
 
     <div className='form__sec'>
       <label>Industry*</label>
-      <select type='select' />      
+      <select type='select'  >
+      <option value="Choose">Choose</option>
+      </select>
     </div>     
 
     <div className='form__sec'>
@@ -47,7 +49,7 @@ const Form = () => {
 
       <div className='form__sec'>
       <label>Message</label>
-      <textarea name="Text1" cols="40" rows="5"></textarea>
+      <textarea name="Text1" cols="40" rows="5" placeholder='Message'></textarea>
       </div>
 
       <button>SEND</button>  

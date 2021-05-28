@@ -1,6 +1,9 @@
 @import '../../mixins.scss';
+.headerContactUs {
+  padding: 0 24px;
+}
+
 .heroContactUs {
-  border: 1px solid red;
   justify-content: center;
   margin: 0 16px 0px 16px;
   &__title {
@@ -13,6 +16,5 @@
     margin-top: 20px;
     font-size: 24px;
     font-weight: 400;
-    border: 1px solid red;
   }
 }

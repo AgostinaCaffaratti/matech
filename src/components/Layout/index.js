@@ -5,7 +5,7 @@ import Footer from '../Footer'
 const Layout = (props) => {
   return (
     <div className='layout' >
-    <div className='layout__hero' style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/HerofondoDark.svg'})`}} >
+    <div className='layout__hero' style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/HerofondoDark.svg'})`, backgroundRepeat:'no-repeat',backgroundPosition:'right'}} >
     <Hero />
     </div>
     {props.children}

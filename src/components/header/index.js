@@ -1,4 +1,5 @@
 import React from 'react'
+import Menu from '../Menu'
 
 
 import './style.scss'
@@ -9,9 +10,7 @@ const Header = () => {
       <div>
        <img src={process.env.PUBLIC_URL + "/assets/LogoHorizontal.png"} alt="logo" />
       </div>
-      <div className="header__hamburger">
-       <img src={process.env.PUBLIC_URL + '/assets/Hamburger.svg'} alt='hamburger-menu' />
-      </div>      
+      <Menu />            
     </div>
   )
 }

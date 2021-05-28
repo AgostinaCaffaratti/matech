@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './style.scss'
 
 const Footer = () => {
@@ -11,19 +12,27 @@ const Footer = () => {
         <div className="footer__follow__links">
           <h4>Follow Us</h4>
           <div className="footer__follow__links__icons">
-            <img src={process.env.PUBLIC_URL + '/assets/InLink.svg'} alt="LinkedinLink" />
-            <img src={process.env.PUBLIC_URL + '/assets/twLink.svg'} alt="twitterLink" />
-            <img
-              className="footer__follow__links__icons--m"
-              src={process.env.PUBLIC_URL + '/assets/MeLink.svg'}
-              alt="LinkedinLink"
-            />
+            <a href="https://www.linkedin.com/company/matech-studios/" target="blank">
+              <img src={process.env.PUBLIC_URL + '/assets/InLink.svg'} alt="LinkedinLink" />
+            </a>
+            <a href="https://twitter.com" target="blank">
+              <img src={process.env.PUBLIC_URL + '/assets/twLink.svg'} alt="twitterLink" />
+            </a>
+            <a href="https://medium.com/@matechstudios" target="blank">
+              <img
+                className="footer__follow__links__icons--m"
+                src={process.env.PUBLIC_URL + '/assets/MeLink.svg'}
+                alt="LinkedinLink"
+              />
+            </a>
           </div>
         </div>
         <div className="footer__mail">
           <p>info@matechstudios.com</p>
         </div>
+        <Link to='/contact-us'>
         <button>CONTACT US</button>
+        </Link>
       </div>
       <div className="footer__pages">
         <div className="footer__pages__services">

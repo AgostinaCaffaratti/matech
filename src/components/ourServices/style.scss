@@ -27,5 +27,10 @@
     @include button(100%, 36px);
     margin-top: 55px;
     margin-bottom: 80px;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
   }
 }

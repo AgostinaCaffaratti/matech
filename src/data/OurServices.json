@@ -1,31 +1,33 @@
 [
   {
-    "img": "AppDev.svg",
+    "img": "Application-development.gif",
     "title": "Application Development",
     "description": "Let’s build digital services that boost your business results."
   },
   {
-    "img": "BusinessProcesses.svg",
-    "title": "Business Process",
-    "description": "Venture digital transformation of your operation models driving innovation and business success."
-  },
-  {
-    "img": "QualityEngineering.svg",
+    "img": "Quality-Engineering.gif",
     "title": "Quality Engineering",
     "description": "Testing and Quality assurance for faster, secure and cost-effective solutions."
   },
   {
-    "img": "AppIntegration.svg",
-    "title": "Application Integration ",
-    "description": "Get your beloved APIs passionately developed, graciously managed and safely exposed for strategic business."
-  },
-  {
-    "img": "UiUxDesign.svg",
+    "img": "UI-&-UX-Design.gif",
     "title": "UI & UX Design ",
     "description": "From raw ideas to eye-catching and sticky designs."
   },
   {
-    "img": "DevOpsMentality.svg",
+    "img": "Business-Process.gif",
+    "title": "Business Process",
+    "description": "Venture digital transformation of your operation models driving innovation and business success."
+  },
+
+  {
+    "img": "Application-Integration.gif",
+    "title": "Application Integration ",
+    "description": "Get your beloved APIs passionately developed, graciously managed and safely exposed for strategic business."
+  },
+
+  {
+    "img": "DevOps-Mentality.gif",
     "title": "Mentality  ",
     "description": "Continuously deliver evolving value in support of your business goals."
   }

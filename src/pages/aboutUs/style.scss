@@ -1,11 +1,101 @@
+@import '../../mixins.scss';
+
+.aboutUsHero {
+  background-image: url('../../backgrounds/HerofondoDark.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include for-desktop-up {
+    background-image: url('../../backgrounds/DeskHeroAboutUS.svg');
+  }
+}
 .aboutUs {
   margin-bottom: 54px;
+  display: flex;
+  flex-direction: column;
+
+  &__desk {
+    display: none;
+
+    @include for-desktop-up {
+      display: flex;
+      margin: 40px auto 20px auto;
+      width: 80%;
+      align-content: center;
+      background: transparent;
+      box-shadow: none;
+      border-radius: none;
+
+      padding: 30px 50px;
+
+      &--item {
+        @include for-desktop-up {
+          background: linear-gradient(270deg, #0a0e09 0%, #191e18 89.76%);
+          box-shadow: 0px 44px 42px -6px rgba(0, 0, 0, 0.32);
+          border-radius: 8px;
+          align-content: center;
+          padding: 80px 30px;
+        }
+        h2 {
+          font-size: 24px;
+          font-weight: 700;
+          margin-bottom: 16px;
+        }
+      }
+
+      img {
+        @include for-desktop-up {
+          display: block;
+
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+
+  .text-0 {
+    @include for-desktop-up {
+      display: none;
+    }
+  }
+
+  .text-1 {
+    @include for-desktop-up {
+      display: none;
+    }
+  }
+
   &__card {
     margin: 34px 16px;
     background: linear-gradient(270deg, #0a0e09 0%, #191e18 89.76%);
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.32);
     border-radius: 8px;
     padding: 30px 50px;
+
+    @include for-desktop-up {
+      display: flex;
+      margin: 40px auto 20px auto;
+      width: 80%;
+      align-content: center;
+      background: transparent;
+      box-shadow: none;
+      border-radius: none;
+    }
+
+    .desc-3 {
+      @include for-desktop-up {
+        order: -1;
+      }
+    }
+
+    div {
+      @include for-desktop-up {
+        background: linear-gradient(270deg, #0a0e09 0%, #191e18 89.76%);
+        box-shadow: 0px 44px 42px -6px rgba(0, 0, 0, 0.32);
+        border-radius: 8px;
+        align-content: center;
+        padding: 80px 30px;
+      }
+    }
 
     h2 {
       font-size: 24px;
@@ -14,6 +104,7 @@
     }
     &--desc {
       margin-bottom: 20px;
+      width: 430px;
     }
     &--val {
       margin-top: 16px;

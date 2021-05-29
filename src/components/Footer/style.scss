@@ -79,11 +79,15 @@
 
     &__services {
       align-content: center;
+
       h4 {
         font-size: 20px;
         font-weight: 700;
         margin-bottom: 30px;
         text-align: center;
+        @include for-desktop-up {
+          text-align: left;
+        }
       }
 
       p {

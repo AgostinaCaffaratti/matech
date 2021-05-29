@@ -7,12 +7,14 @@ import './style.scss'
 const ContactUs = () => {
   return (
     <div >    
-      <Header />    
-      <div className='heroContactUs' >
-      <h1 className='heroContactUs__title'>CONTACT MATECH STUDIOS</h1>
-      <p className='heroContactUs__p'>Embrace the power of technology to improve people’s lives. </p>    
+      <Header />
+      <div className='contactUs'>
+      <div className='contactUs__heroContactUs' >
+      <h1 className='contactUs__heroContactUs__title'>CONTACT MATECH STUDIOS</h1>
+      <p className='contactUs__heroContactUs__p'>Reach us and change the World</p>    
     </div>
     <Form/>   
+      </div>          
      <Footer />
     </div>
   )

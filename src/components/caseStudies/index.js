@@ -15,7 +15,7 @@ const CaseStudies = () => {
                 <div className={'text-' + index}>
                   <h3>{c.title}</h3>
                   <p className="subtitle">{c.subtitle}</p>
-                  <p>{c.description}</p>     
+                  <p>{c.description}</p>    
                                 
                   <button>READ CASE STUDY</button>
                 </div>

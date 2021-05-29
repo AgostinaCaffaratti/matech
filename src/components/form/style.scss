@@ -6,6 +6,11 @@
   background: #0b3e1c;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.32);
   border-radius: 8px;
+  @include for-desktop-up {
+    width: 50%;
+    margin: 50px;
+    padding: 50px;
+  }
 
   &__sec {
     margin: 30px 0;
@@ -43,5 +48,9 @@
   button {
     @include button(100%, 36px);
     margin-bottom: 36px;
+    @include for-desktop-up {
+      @include button(50%, 36px);
+      margin-bottom: 36px;
+    }
   }
 }

@@ -3,16 +3,19 @@
     "title": "Our Purpose (WHY)",
     "description1": "Embrace the power of technology to improve people’s lives."
   },
-  {
-    "title": "Our Mission (HOW, Strategy the path to purpose)",
-    "description1": "Be a technology company formed by specialists that thrives on digital transformation by partnering with entrepreneurs and other companies around the world to carry on their value proposition.",
-    "description2": "Implement and develop technology’s best practices by the continuous evolution of our members and promoting a new way of collaboration while maintaining personal and professional life balance."
-  },
+
   {
     "title": "Our Vision (WHAT)",
     "description1": "Top-notch technology company actively impacting people’s lives."
   },
   {
+    "img": "OurMissionDesk.png",
+    "title": "Our Mission (HOW, Strategy the path to purpose)",
+    "description1": "Be a technology company formed by specialists that thrives on digital transformation by partnering with entrepreneurs and other companies around the world to carry on their value proposition.",
+    "description2": "Implement and develop technology’s best practices by the continuous evolution of our members and promoting a new way of collaboration while maintaining personal and professional life balance."
+  },
+  {
+    "img": "OurValuesDEsk.png",
     "title": "OUR VALUES",
     "description": [
       {

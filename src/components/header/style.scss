@@ -1,8 +1,21 @@
+@import '../../mixins.scss';
 .header {
+  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 15px 0;
+  padding: 0 15px 0 15px;
   align-items: center;
   background: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  @include for-desktop-up {
+    padding: 0 105px;
+  }
+
+  &.active {
+    background: #191e18;
+  }
 }

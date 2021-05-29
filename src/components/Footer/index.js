@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import './style.scss'
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <div className="footer__img">
+    <Fragment>
+<div className="footer">
+      <div className="footer__img-mob">
         <img src={process.env.PUBLIC_URL + '/assets/LogoHorizontal.png'} alt="Logo" />
+      </div>
+      <div className="footer__img-desk">
+        <img src={process.env.PUBLIC_URL + '/assets/LogoVertical.svg'} alt="Logo" />
       </div>
       <div className="footer__follow">
         <div className="footer__follow__links">
@@ -44,10 +48,12 @@ const Footer = () => {
           <p>DevOps Mentality</p>
         </div>
       </div>
+    </div>
       <div className="footer__rights">
         <p>All rights reserved MATECH studios 2021</p>
       </div>
-    </div>
+    </Fragment>
+    
   )
 }
 

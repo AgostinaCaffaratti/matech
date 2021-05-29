@@ -6,16 +6,13 @@ import './style.scss'
 
 const ContactUs = () => {
   return (
-    <div >
-    <div className='headerContactUs'>
-      <Header />
-    </div>
+    <div >    
+      <Header />    
       <div className='heroContactUs' >
       <h1 className='heroContactUs__title'>CONTACT MATECH STUDIOS</h1>
       <p className='heroContactUs__p'>Embrace the power of technology to improve people’s lives. </p>    
     </div>
-    <Form/>
-   
+    <Form/>   
      <Footer />
     </div>
   )

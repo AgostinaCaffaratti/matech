@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Fragment } from 'react'
 import { Link } from 'react-router-dom'
+import MenuDesk from '../menuDesk'
 import './style.scss'
 
 const Menu = () => {
@@ -31,7 +32,7 @@ const Menu = () => {
       </div>
       </div>
       <div className="menu__section">
-        <Link className="menu__section--link" to='/case-studies'>Case Studies</Link>
+        <Link className="menu__section--link" to='/'>Case Studies</Link>
       </div>
       <div className="menu__section">
         <Link className="menu__section--link" to='/about-us'>About Us</Link>
@@ -55,6 +56,7 @@ const Menu = () => {
       </div>
     </nav>
     </div>
+    <MenuDesk  />
    
     </Fragment>
     

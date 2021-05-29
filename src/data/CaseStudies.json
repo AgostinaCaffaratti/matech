@@ -1,10 +1,12 @@
 [
   {
+    "img": "appDevDesk.png",
     "title": "Application Develoment",
     "subtitle": "Systems that realize your objectives",
     "description": "With our Modern Application Services you can deliver the experience customers want and the results you need. We help you develop, manage and modernize apps to deliver digital services and boost business results."
   },
   {
+    "img": "qualityDesk.png",
     "title": "Quality Engineering",
     "subtitle": "Testing and Quality assurance for faster",
     "description": "We understand your business and develop state-of-the-art testing solutions to improve quality, usability, increase speed and security, reducing risks and costs.Count us in to boost your application queality, performance and security, throwugh metrics and benchmark-driven queality and performance tests."

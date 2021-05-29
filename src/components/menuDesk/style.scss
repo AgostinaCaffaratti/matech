@@ -1,0 +1,20 @@
+@import '../../mixins.scss';
+.menuDesk {
+  display: none;
+
+  @include for-desktop-up {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+
+    &__icons {
+      width: 20%;
+      display: flex;
+      justify-content: space-between;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}

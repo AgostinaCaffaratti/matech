@@ -10,3 +10,9 @@
   font-size: 16px;
   font-weight: 700;
 }
+
+@mixin for-desktop-up {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}

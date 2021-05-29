@@ -1,8 +1,14 @@
+@import '../../mixins.scss';
+
 .navBar {
   display: flex;
   justify-content: end;
   align-items: center;
   height: 80px;
+
+  @include for-desktop-up {
+    display: none;
+  }
 }
 
 .menu {
@@ -15,6 +21,10 @@
   right: -100%;
   transition: 850ms;
   z-index: 1;
+
+  @include for-desktop-up {
+    display: none;
+  }
 
   &.active {
     right: 00%;

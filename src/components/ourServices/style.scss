@@ -16,11 +16,28 @@
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 70px;
+
+    @include for-desktop-up {
+      display: none;
+    }
+  }
+
+  &__services {
+    display: none;
+    @include for-desktop-up {
+      margin-top: 64px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   h3 {
     text-align: center;
     width: 250px;
+    @include for-desktop-up {
+      width: auto;
+    }
   }
 
   button {
@@ -31,6 +48,10 @@
     a {
       text-decoration: none;
       color: black;
+    }
+
+    @include for-desktop-up {
+      @include button(20%, 36px);
     }
   }
 }

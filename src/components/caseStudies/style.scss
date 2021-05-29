@@ -7,39 +7,102 @@
   align-items: center;
   background: #000000;
 
+  @include for-desktop-up {
+    background: #191e18;
+    background-image: url('./casesBackground.png');
+    background-size: cover;
+    margin-top: -500px;
+    height: 100%;
+    padding: 0;
+  }
+
   h2 {
     font-size: 30px;
     margin-top: 43px;
     margin-bottom: 54px;
+    @include for-desktop-up {
+      margin-top: 550px;
+    }
   }
 
   &__items-container {
     &--text {
       padding: 0 40px 0px 40px;
+      @include for-desktop-up {
+        display: flex;
+        order: 2;
+        margin-bottom: 64px;
 
-      h3 {
-        font-size: 24px;
-        margin-bottom: 8px;
+        padding: 0;
       }
 
-      .subtitle {
-        font-size: 20px;
-        margin-bottom: 22px;
-        font-weight: 400;
-        line-height: 24px;
-        width: 200;
+      .text-1 {
+        @include for-desktop-up {
+          order: -1;
+        }
       }
 
-      p {
-        font-size: 16px;
-        margin-bottom: 28px;
-        line-height: 20px;
+      img {
+        display: none;
+        @include for-desktop-up {
+          display: block;
+          padding: 30px 10px;
+        }
+      }
+      div {
+        @include for-desktop-up {
+          padding: 40px 60px;
+          background: linear-gradient(270deg, #0a0e09 0%, #191e18 89.76%);
+          box-shadow: 0px 44px 42px -6px rgba(0, 0, 0, 0.32);
+          border-radius: 8px;
+        }
+        h3 {
+          font-size: 24px;
+          margin-bottom: 8px;
+        }
+
+        .subtitle {
+          font-size: 20px;
+          margin-bottom: 22px;
+          font-weight: 400;
+          line-height: 24px;
+          width: 200;
+        }
+
+        p {
+          font-size: 16px;
+          margin-bottom: 28px;
+          line-height: 20px;
+          @include for-desktop-up {
+            width: 400px;
+          }
+        }
+        button {
+          display: none;
+          @include for-desktop-up {
+            @include button(50%, 36px);
+            margin-top: 50px;
+            display: block;
+          }
+        }
       }
     }
 
-    button {
+    &--button {
       @include button(100%, 36px);
       margin-bottom: 50px;
+      @include for-desktop-up {
+        display: none;
+      }
+    }
+    &--button-cases {
+      display: none;
+      @include for-desktop-up {
+        @include button(30%, 36px);
+        margin-bottom: 50px;
+        display: block;
+        margin: 20px auto 90px auto;
+      }
     }
   }
 }

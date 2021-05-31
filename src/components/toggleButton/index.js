@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import Context from '../../themeContext'
 import './style.scss'
 import{ReactComponent as Moon} from './Vector.svg'
@@ -9,7 +9,7 @@ const ToggleButton = () => {
   const {theme, setTheme} = useContext(Context)
   
 
-  console.log({theme})
+  
 
   return (
    <label className="switch">

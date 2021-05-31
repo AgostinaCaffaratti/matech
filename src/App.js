@@ -18,9 +18,9 @@ import Context from './themeContext'
 
 function App() {  
   const {theme} = useContext(Context)
-  console.log({theme})
+ 
   const actualtheme = theme
-  console.log(actualtheme)
+  
 
 
   return (

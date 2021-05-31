@@ -38,7 +38,7 @@ const Menu = () => {
       </div>
       </div>
       <div className="menu__section">
-        <Link className="menu__section--link" to='/'>Case Studies</Link>
+        <a className="menu__section--link" href='https://medium.com/@matechstudios' target='blank'>Case Studies</a>
       </div>
       <div className="menu__section">
         <Link className="menu__section--link" to='/about-us'>About Us</Link>

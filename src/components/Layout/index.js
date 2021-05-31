@@ -1,5 +1,4 @@
 import React from 'react'
-import Hero from '../hero'
 import Footer from '../Footer'
 import Header from '../header'
 import { Fragment } from 'react'

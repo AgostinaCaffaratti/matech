@@ -27,7 +27,7 @@ const Footer = () => {
               <Twitter className='icon' />
             </a>
             <a href="https://medium.com/@matechstudios" target="blank">
-              <Linkedin  className='icon' />
+              <Medium  className='icon' />
             </a>
           </div>
         </div>

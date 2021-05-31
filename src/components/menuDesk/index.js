@@ -17,7 +17,7 @@ const MenuDesk = () => {
         <Link to="/our-services">Our Services</Link>        
       </div>
       <div>
-        <Link to="/">Case Studies</Link>
+        <a href="https://medium.com/@matechstudios" target='blank'>Case Studies</a>
       </div>
       <div>
         <Link to="/about-us">About Us</Link>

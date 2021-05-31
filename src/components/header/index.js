@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Menu from '../Menu'
 
 
@@ -20,9 +21,9 @@ const Header = () => {
 
   return (
     <div className={header ? 'header active' : 'header'}>
-      <div>
+      <Link to='/'>
        <img src={process.env.PUBLIC_URL + "/assets/LogoHorizontal.svg"} alt="logo" />
-      </div>
+      </Link>
       <Menu />            
     </div>
   )

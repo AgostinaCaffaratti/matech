@@ -1,4 +1,5 @@
 import React from 'react'
+import { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import Footer from '../../components/Footer'
 import Header from '../../components/header'
@@ -6,11 +7,12 @@ import './style.scss'
 
 const ErrorPage = () => {
   return (
-    <div>
-    <div style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/background404.svg'})`, backgroundRepeat:'no-repeat',backgroundPosition:'right'}}>
-    <div className='headerError'>
+    <Fragment>
+    <div className='error'>
+    
+    
       <Header />
-    </div>
+   
       <div className='heroError' >
       <h1  >404</h1>
       <h2 >SOMETHING´S MISSING</h2>
@@ -19,8 +21,10 @@ const ErrorPage = () => {
       <button> <Link to='/'>GO BACK TO HOME</Link></button>
     </div>
     </div>
+    
     <Footer />
-    </div>
+    </Fragment>
+    
   )
 }
 

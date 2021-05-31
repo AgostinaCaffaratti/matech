@@ -52,7 +52,7 @@
       }
 
       &__icons {
-        img {
+        .icon {
           margin-right: 10px;
         }
       }
@@ -68,8 +68,8 @@
   }
 
   button {
-    @include button(100%, 36px);
     margin-bottom: 54px;
+    @include button(100%, 36px);
   }
 
   &__pages {

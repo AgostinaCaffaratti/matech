@@ -4,10 +4,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 46px 23px 0 23px;
+  margin: 46px 23px 0 23px;
 
   h2 {
     font-size: 30px;
+    font-weight: bold;
   }
 
   &__service {
@@ -34,7 +35,7 @@
 
   h3 {
     text-align: center;
-    width: 250px;
+    width: 350px;
     @include for-desktop-up {
       width: auto;
     }
@@ -44,11 +45,6 @@
     @include button(100%, 36px);
     margin-top: 55px;
     margin-bottom: 80px;
-
-    a {
-      text-decoration: none;
-      color: black;
-    }
 
     @include for-desktop-up {
       @include button(20%, 36px);

@@ -12,7 +12,7 @@ const AboutUs = () => {
     </div>
       <div className='aboutUs'>  
       <div className='aboutUs__desk'>      
-      <div className='aboutUs__desk--item'>
+      <div className='aboutUs__desk--item Card'>
       <h2>Our Purpose (WHY)</h2>
       <p>Embrace the power of technology to improve people’s lives. </p>
       <h2>Our Vision (WHAT)</h2>
@@ -21,15 +21,14 @@ const AboutUs = () => {
       <img src={process.env.PUBLIC_URL + '/assets/AboutUsPorpDesk.png'} alt='PoprImg' />
       </div>    
  {data.map((e, index) => {
-        return (
-          
-<div className={'text-' + index}>
- <div className='aboutUs__card'>
+        return (        
+
+ <div className={'aboutUs__card text-' + index }>
            {e.img && <img src={process.env.PUBLIC_URL + '/assets/' + e.img} alt={e.img} />}
-           <div className={'desc-' + index}>
+           <div className={'Card desc-' + index}>
 <h2>{e.title}</h2>
             {e.description1 && <p className='aboutUs__card--desc'>{e.description1}</p>}
-            {e.description2 && <p>{e.description2}</p>}
+            {e.description2 && <p className='aboutUs__card--desc'>{e.description2}</p>}
             {e.description &&
               e.description.map((d) => {
                 return (
@@ -45,7 +44,7 @@ const AboutUs = () => {
 </div>
            
           
-          </div>
+          
 
          
         )

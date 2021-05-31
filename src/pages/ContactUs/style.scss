@@ -3,6 +3,10 @@
   @include for-desktop-up {
     display: flex;
     justify-content: space-between;
+    background-image: url('/backgrounds/FormBackDark.png');
+    background-size:contain;
+    background-repeat: no-repeat; 
+   
   }
   &__heroContactUs {
     justify-content: center;

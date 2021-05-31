@@ -1,4 +1,4 @@
-
+import React from 'react';
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Home from './pages/home/Home'
@@ -10,14 +10,24 @@ import ErrorPage from './pages/Error'
 
 
 import './style.scss'
-import { Fragment } from 'react'
+import { Fragment, useContext } from 'react'
 import ScrollToTop from './components/scrollToTop'
+import Context from './themeContext'
 
-function App() {
+
+
+function App() {  
+  const {theme} = useContext(Context)
+  console.log({theme})
+  const actualtheme = theme
+  console.log(actualtheme)
+
+
   return (
-    <div className="App">
+    
+    <div className={'App-' + actualtheme}>
     <BrowserRouter>
-    <Fragment>
+    <Fragment>    
     <ScrollToTop/>
     <Switch>
         <Route exact path='/' component={Home} />
@@ -26,10 +36,10 @@ function App() {
         <Route path='/contact-us' component={ContactUs} />
         <Route path='*' component={ErrorPage} />
       </Switch>  
-    </Fragment>
-      
+    </Fragment>      
     </BrowserRouter>
     </div>
+   
   )
 }
 

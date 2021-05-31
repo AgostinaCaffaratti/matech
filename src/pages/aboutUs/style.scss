@@ -6,12 +6,14 @@
   background-size: cover;
   @include for-desktop-up {
     background-image: url('../../backgrounds/DeskHeroAboutUS.svg');
+    background-size: 100%;
   }
 }
 .aboutUs {
   margin-bottom: 54px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   &__desk {
     display: none;
@@ -24,6 +26,7 @@
       background: transparent;
       box-shadow: none;
       border-radius: none;
+      justify-content: center;
 
       padding: 30px 50px;
 
@@ -66,15 +69,15 @@
 
   &__card {
     margin: 34px 16px;
-    background: linear-gradient(270deg, #0a0e09 0%, #191e18 89.76%);
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.32);
     border-radius: 8px;
     padding: 30px 50px;
 
     @include for-desktop-up {
       display: flex;
-      margin: 40px auto 20px auto;
-      width: 80%;
+      justify-content: center;
+      margin: 40px 10% 20px 10%;
+      width: 90%;
       align-content: center;
       background: transparent;
       box-shadow: none;
@@ -96,6 +99,12 @@
         padding: 80px 30px;
       }
     }
+    img {
+      display: none;
+      @include for-desktop-up {
+        display: block;
+      }
+    }
 
     h2 {
       font-size: 24px;
@@ -104,7 +113,9 @@
     }
     &--desc {
       margin-bottom: 20px;
-      width: 430px;
+      @include for-desktop-up {
+        width: 430px;
+      }
     }
     &--val {
       margin-top: 16px;

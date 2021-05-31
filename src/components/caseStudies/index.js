@@ -12,7 +12,7 @@ const CaseStudies = () => {
             <Fragment>
               <div key={index} className="caseStudies__items-container--text">
                 <img src={process.env.PUBLIC_URL + '/assets/' + c.img} alt={c.img} />
-                <div className={'text-' + index}>
+                <div className={'Card text-' + index}>
                   <h3>{c.title}</h3>
                   <p className="subtitle">{c.subtitle}</p>
                   <p>{c.description}</p>    

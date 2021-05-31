@@ -3,6 +3,12 @@ import { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import MenuDesk from '../menuDesk'
 import './style.scss'
+import {ReactComponent as Hamburger} from './Hamburger.svg'
+import {ReactComponent as Twitter } from '../../Icons/twLink.svg'
+import {ReactComponent as Medium } from '../../Icons/MeLink.svg'
+import {ReactComponent as Linkedin } from '../../Icons/InLink.svg'
+import ToggleButton from '../toggleButton'
+
 
 const Menu = () => {
   const [sidebar, setSidebar] = useState(false)
@@ -12,11 +18,11 @@ const Menu = () => {
     <Fragment>   
     <div>
  <div className="navBar">
-       <img src={process.env.PUBLIC_URL + '/assets/Hamburger.svg'} alt='hamburger-menu' onClick={showSidebar} />
+       <Hamburger onClick={showSidebar} className='hamburger'/>
       </div> 
 <nav className={sidebar ? 'menu active' : 'menu'} onClick={showSidebar}>  
       <div className="menu__logo">
-        <img src={process.env.PUBLIC_URL + '/assets/LogoHorizontal.png'} alt="logo" />
+        <img src={process.env.PUBLIC_URL + '/assets/LogoHorizontal.svg'} alt="logo" />
       </div>
       <div className="menu__section">
         <Link className="menu__section--link" to='/'>Home</Link>
@@ -43,15 +49,18 @@ const Menu = () => {
       <div className="menu__section" >
         <div className="menu__section__icons" >
         <a href='https://www.linkedin.com/company/matech-studios/' target='blank'>
-          <img className="menu__section__icons--in" src={process.env.PUBLIC_URL + '/assets/InLink.svg'} alt="linkedinLogo" />
+         <Linkedin className='icon' />
         </a>
         <a href='https://twitter.com' target='blank'>
-          <img className="menu__section__icons--in" src={process.env.PUBLIC_URL + '/assets/twLink.svg'} alt="twitterLogo" />
+         <Twitter className='icon' />
         </a>
         <a href='https://medium.com/@matechstudios' target='blank'>
 
-           <img src={process.env.PUBLIC_URL + '/assets/meLink.svg'} alt="twitterLogo" />
+          <Medium className='icon' />
         </a>
+        </div>
+        <div className='toggleButton'>
+        <ToggleButton />
         </div>
       </div>
     </nav>

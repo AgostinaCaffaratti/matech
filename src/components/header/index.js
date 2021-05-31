@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <div className={header ? 'header active' : 'header'}>
       <div>
-       <img src={process.env.PUBLIC_URL + "/assets/LogoHorizontal.png"} alt="logo" />
+       <img src={process.env.PUBLIC_URL + "/assets/LogoHorizontal.svg"} alt="logo" />
       </div>
       <Menu />            
     </div>

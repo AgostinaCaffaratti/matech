@@ -1,28 +1,17 @@
 @import '../../mixins.scss';
+@import '../../variables.scss';
 
 .caseStudies {
   display: flex;
   flex-direction: column;
   padding: 0 23px 0 23px;
   align-items: center;
-  background: #000000;
-
-  @include for-desktop-up {
-    background: #191e18;
-    background-image: url('./casesBackground.png');
-    background-size: cover;
-    margin-top: -500px;
-    height: 100%;
-    padding: 0;
-  }
 
   h2 {
     font-size: 30px;
-    margin-top: 43px;
     margin-bottom: 54px;
-    @include for-desktop-up {
-      margin-top: 550px;
-    }
+    margin-top: 50px;
+    font-weight: 700;
   }
 
   &__items-container {
@@ -51,7 +40,6 @@
       div {
         @include for-desktop-up {
           padding: 40px 60px;
-          background: linear-gradient(270deg, #0a0e09 0%, #191e18 89.76%);
           box-shadow: 0px 44px 42px -6px rgba(0, 0, 0, 0.32);
           border-radius: 8px;
         }

@@ -10,6 +10,7 @@ const OurServices = () => {
     <div className='ourServicesHero'>
     <Hero />
     </div>
+    
       {data.map((e, index) => {
         return (
           <div className="service-desc">  

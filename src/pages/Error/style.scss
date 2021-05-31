@@ -1,12 +1,20 @@
 @import '../../mixins.scss';
-.headerError {
-  padding: 0px 16px;
+
+.error {
+  background-image: url('../../backgrounds/back404.png');
+  background-size: contain;
 }
+
 .heroError {
-  padding: 0 23px 54px 23px;
+  padding: 54px 23px 54px 23px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+
+  @include for-desktop-up {
+    padding: 10% 23px 10% 23px;
+  }
 
   h1 {
     font-size: 144px;
@@ -21,6 +29,9 @@
   p {
     text-align: center;
     margin-bottom: 54px;
+    @include for-desktop-up {
+      width: 270px;
+    }
   }
 
   button {
@@ -28,6 +39,10 @@
     a {
       text-decoration: none;
       color: black;
+    }
+
+    @include for-desktop-up {
+      @include button(20%, 36px);
     }
   }
 }

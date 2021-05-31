@@ -1,4 +1,5 @@
 @import './variables.scss';
+@import './mixins.scss';
 
 * {
   margin: 0;
@@ -9,9 +10,172 @@
   outline: none;
 }
 
-.App {
-  background: $background;
+body {
+  height: 100vh;
+}
+
+.App-Dark {
+  background: $backgroundDark;
   height: auto;
   font-family: $font;
   color: $primaryColorFont;
+  .header {
+    background: transparent;
+    &.active {
+      background: $backgroundDark;
+    }
+  }
+
+  .menu {
+    background: $backgroundDark;
+    a {
+      color: $primaryColorFont;
+      &:hover {
+        color: $principalgreenDark;
+      }
+      .icon {
+        color: $principalgreenDark;
+      }
+    }
+  }
+
+  .menuDesk {
+    a {
+      color: $primaryColorFont;
+      &:hover {
+        color: $principalgreenDark;
+      }
+    }
+  }
+  .icon {
+    color: $principalgreenDark;
+  }
+  .caseStudies {
+    background: $backgroundBlack;
+    @include for-desktop-up {
+      background: $backgroundDark;
+      background-image: url('./backgrounds/casesBackground.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    .Card {
+      background: transparent;
+      @include for-desktop-up {
+        background: $backgroundCardsDark;
+      }
+    }
+  }
+
+  .aboutUs {
+    .Card {
+      background: transparent;
+      @include for-desktop-up {
+        background: $backgroundCardsDark;
+      }
+    }
+  }
+
+  .form {
+    background: $secondaryGreenDark;
+  }
+
+  button {
+    background: $principalgreenDark;
+    color: $backgroundDark;
+    a {
+      text-decoration: none;
+      color: $backgroundBlack;
+    }
+  }
+
+  .switch {
+    display: none;
+  }
+}
+
+.App-Light {
+  background: $backgroundWhite;
+  font-family: $font;
+  color: $secondaryColorFont;
+
+  .header {
+    background: transparent;
+    &.active {
+      background: $backgroundWhite;
+    }
+  }
+
+  .hamburger g {
+    fill: $blackColorFontLight;
+  }
+
+  .menu {
+    background: $backgroundLight;
+    a {
+      color: $menuColorFontLight;
+      &:hover {
+        color: $principalgreenLight;
+      }
+    }
+  }
+  .icon {
+    color: $principalgreenLight;
+  }
+
+  .menuDesk {
+    a {
+      color: $menuColorFontLight;
+      &:hover {
+        color: $principalgreenLight;
+      }
+      .icon {
+        color: $principalgreenLight;
+      }
+    }
+  }
+
+  .caseStudies {
+    background: $backgroundLight;
+    @include for-desktop-up {
+      background: $backgroundWhite;
+      background-image: url('./backgrounds/casesBackground.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    .Card {
+      background: transparent;
+      @include for-desktop-up {
+        background: $backgroundCardsLight;
+      }
+    }
+  }
+  .aboutUs {
+    .Card {
+      background: transparent;
+      @include for-desktop-up {
+        background: $backgroundCardsLight;
+      }
+    }
+  }
+
+  .form {
+    background: $backgroundLight;
+  }
+
+  .footer {
+    background: $backgroundLight;
+    &__rights {
+      background: $backgroundRights;
+      color: $backgroundWhite;
+    }
+  }
+
+  button {
+    background: $principalgreenLight;
+    color: $backgroundWhite;
+    a {
+      text-decoration: none;
+      color: $backgroundWhite;
+    }
+  }
 }

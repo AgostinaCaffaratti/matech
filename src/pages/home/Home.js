@@ -9,9 +9,13 @@ import './style.scss'
 const Home = () => {
   return (
     <Layout>
-     <div className='homeHero'  >    
+    
+     <div className='homeHero'  > 
+     <div className='homeHero__text'>
     <Hero />
+     </div>   
     </div>
+   
  <OurServices />   
    <CaseStudies/>  
     </Layout>

@@ -11,6 +11,6 @@
   z-index: 999;
 
   @include for-desktop-up {
-    padding: 0 105px;
+    padding: 0 100px 0 200px;
   }
 }

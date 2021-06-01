@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import MenuDesk from '../menuDesk'
@@ -14,6 +14,14 @@ const Menu = () => {
   const [sidebar, setSidebar] = useState(false)
 
   const showSidebar = () => setSidebar(!sidebar)
+
+  useEffect(() => {
+    document.addEventListener('mousedown', () => {
+      setSidebar(false)
+    })
+  })
+  console.log(sidebar)
+ 
   return (
     <Fragment>   
     <div>
@@ -28,14 +36,7 @@ const Menu = () => {
         <Link className="menu__section--link" to='/'>Home</Link>
       </div>
       <div className="menu__section">
-        <Link className="menu__section--link" to='/our-services'>Our Services</Link>
-      <div className="menu__section__services">
-        <p>Solution Development</p>
-        <p>Quality Engineering</p>
-        <p>Business Processes</p>
-        <p>Solution Integration</p>
-        <p>DevOps Mentality</p>
-      </div>
+        <Link className="menu__section--link" to='/our-services'>Our Services</Link>     
       </div>
       <div className="menu__section">
         <a className="menu__section--link" href='https://medium.com/@matechstudios' target='blank'>Case Studies</a>

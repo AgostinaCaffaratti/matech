@@ -11,24 +11,29 @@ const CaseStudies = () => {
           return (
             <Fragment>
               <div key={index} className="caseStudies__items-container--text">
-                <img src={process.env.PUBLIC_URL + '/assets/' + c.img} alt={c.img} />
+                <img
+                  className="img-dark"
+                  src={process.env.PUBLIC_URL + '/assets/' + c.img}
+                  alt={c.img}
+                />
                 <div className={'Card text-' + index}>
                   <h3>{c.title}</h3>
                   <p className="subtitle">{c.subtitle}</p>
-                  <p>{c.description}</p>    
-                                
+                  <p>{c.description}</p>
                   <button>READ CASE STUDY</button>
                 </div>
-                    
               </div>
               <a href="https://medium.com/@matechstudios" target="blank">
                 <button className="caseStudies__items-container--button">READ CASE STUDY</button>
               </a>
-              
             </Fragment>
           )
         })}
-        <button className="caseStudies__items-container--button-cases" >VIEW ALL CASE STUDIES</button>
+        <button className="caseStudies__items-container--button-cases">
+        <a href="https://medium.com/@matechstudios" target="blank">
+          VIEW ALL CASE STUDIES
+        </a>
+        </button>
       </div>
     </div>
   )

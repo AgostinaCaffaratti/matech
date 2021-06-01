@@ -52,10 +52,11 @@ body {
   }
   .caseStudies {
     background: $backgroundBlack;
+
     @include for-desktop-up {
       background: $backgroundDark;
       background-image: url('./backgrounds/casesBackground.png');
-      background-size: 100% 100%;
+      background-size: cover;
       background-repeat: no-repeat;
     }
     .Card {
@@ -63,6 +64,13 @@ body {
       @include for-desktop-up {
         background: $backgroundCardsDark;
       }
+    }
+  }
+
+  .service-desc {
+    background: $backgroundCardsDark;
+    @include for-desktop-up {
+      background: transparent;
     }
   }
 
@@ -86,10 +94,6 @@ body {
       text-decoration: none;
       color: $backgroundBlack;
     }
-  }
-
-  .switch {
-    display: none;
   }
 }
 
@@ -136,17 +140,27 @@ body {
 
   .caseStudies {
     background: $backgroundLight;
+    box-shadow: inset 0px -7px 20px -10px rgba(0, 0, 0, 0.32);
+
     @include for-desktop-up {
       background: $backgroundWhite;
       background-image: url('./backgrounds/casesBackground.png');
       background-size: 100% 100%;
       background-repeat: no-repeat;
     }
+
     .Card {
       background: transparent;
       @include for-desktop-up {
         background: $backgroundCardsLight;
       }
+    }
+  }
+
+  .service-desc {
+    background: $backgroundCardsLight;
+    @include for-desktop-up {
+      background: transparent;
     }
   }
   .aboutUs {

@@ -5,15 +5,18 @@ import data from '../../data/OurServices.json'
 
 const Slider = () => {
   return (
+   
    <Carousel controls={false} indicators={false}>
 {data.map( d => {
-  return(
+  return(    
 <Carousel.Item>
-    <Items img={d.img} title={d.title} description={d.description} />
+    <Items imgDark={d.img} imgLight={d.imgL} title={d.title} description={d.description} />
   </Carousel.Item>
+    
   )
 })}    
 </Carousel>
+    
   )
 }
 

@@ -7,11 +7,25 @@
   padding: 0 23px 0 23px;
   align-items: center;
 
+  box-shadow: 2px 20px 2px 1px inset rgba(0, 0, 0, 0.2);
+
+  @include for-desktop-up {
+    box-shadow: none;
+  }
+  @include for-largeScreens {
+    margin-top: -350px;
+  }
+
   h2 {
     font-size: 30px;
-    margin-bottom: 54px;
+    margin-bottom: 60px;
     margin-top: 50px;
     font-weight: 700;
+
+    @include for-largeScreens {
+      margin-top: 380px;
+      margin-bottom: 100px;
+    }
   }
 
   &__items-container {
@@ -19,9 +33,13 @@
       padding: 0 40px 0px 40px;
       @include for-desktop-up {
         display: flex;
+
         order: 2;
         margin-bottom: 64px;
         padding: 0;
+      }
+      @include for-largeScreens {
+        margin-bottom: 150px;
       }
 
       .text-1 {
@@ -82,6 +100,7 @@
         display: none;
       }
     }
+
     &--button-cases {
       display: none;
       @include for-desktop-up {
@@ -89,6 +108,9 @@
         margin-bottom: 50px;
         display: block;
         margin: 20px auto 90px auto;
+        a {
+          text-decoration: none;
+        }
       }
     }
   }

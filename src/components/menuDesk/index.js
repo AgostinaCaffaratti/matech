@@ -25,10 +25,6 @@ const MenuDesk = () => {
       <div>
         <Link to="/contact-us">Contact Us</Link>
       </div>
-      <div className='toggleButton'>
-        <ToggleButton />
-        </div>
-
       <div className="menuDesk__icons">
         <a href="https://www.linkedin.com/company/matech-studios/" target="blank">
           <Linkedin className='icon' />
@@ -40,6 +36,9 @@ const MenuDesk = () => {
          <Medium className='icon' />
         </a>
       </div>
+      <div className='toggleButton'>
+        <ToggleButton />
+        </div>
     </nav>
   )
 }

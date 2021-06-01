@@ -1,8 +1,52 @@
+@import '../../variables.scss';
+
+.App-Light {
+  .slider {
+    background-color: $backgroundRights;
+  }
+  .slider:before {
+    background-color: $principalgreenLight;
+  }
+  .slider.round {
+    border-radius: 34px;
+    .moon {
+      margin-left: 25px;
+      margin-top: -3px;
+    }
+    .sun {
+      display: none;
+    }
+  }
+}
+
+.App-Dark {
+  .slider {
+    background-color: $backgroundLight;
+  }
+  .slider:before {
+    background-color: $principalgreenDark;
+  }
+  .slider.round {
+    border-radius: 34px;
+    .moon {
+      margin-left: 25px;
+      margin-top: -3px;
+      display: none;
+    }
+    .sun {
+      display: block;
+
+      margin-left: 9px;
+      margin-top: -2px;
+    }
+  }
+}
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 51px;
+  height: 23px;
+  margin: 0;
 }
 
 /* Hide default HTML checkbox */
@@ -20,7 +64,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #626262;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -28,17 +71,12 @@
 .slider:before {
   position: absolute;
   content: '';
-  height: 26px;
-  width: 26px;
+  height: 16px;
+  width: 16px;
   left: 4px;
   bottom: 4px;
-  background-color: #10cb5b;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-}
-
-input:checked + .slider {
-  background-color: #626262;
 }
 
 input:focus + .slider {
@@ -54,10 +92,6 @@ input:checked + .slider:before {
 /* Rounded sliders */
 .slider.round {
   border-radius: 34px;
-  .moon {
-    margin-left: 35px;
-    margin-top: 3px;
-  }
 }
 
 .slider.round:before {

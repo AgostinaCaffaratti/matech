@@ -16,7 +16,7 @@ const OurServices = () => {
 
          {data.map( e => {
            return (
-           <Items img={e.img} title={e.title} description={e.description} />
+           <Items imgDark={e.img} title={e.title} description={e.description} imgLight={e.imgL} />
            )
          })}   
       </div>

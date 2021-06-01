@@ -1,13 +1,19 @@
 @import '../../mixins.scss';
+
 .homeHero {
   background-image: url('../../backgrounds/HerofondoDark.svg');
   background-size: contain;
   background-position: 'top';
-  height: auto;
 
   @include for-desktop-up {
     background-image: url('../../backgrounds/HeroBackHome.svg');
-    height: 100%;
-    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -170px;
+    align-content: center;
+  }
+  @include for-largeScreens {
+    height: 1150px;
+    align-content: center;
   }
 }
